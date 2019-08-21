@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:QRCodeApp"
+             Title="QR Code Scanner"
+             xmlns:admob="clr-namespace:Xam.FormsPlugin.Abstractions;assembly=AdMobView.FormsPlugin.Abstractions"
+             BackgroundImage="Background.png"
+             x:Class="QRCodeApp.MainPage"
+             Icon="icon.png">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="propos" Clicked="OnAboutClick"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout>
+        <StackLayout Spacing="10" Margin="20" HorizontalOptions="Center" VerticalOptions="StartAndExpand">
+            <Button Text="Scan QR Code"
+                x:Name="btnScan"
+                FontSize="Medium" BackgroundColor="White" BorderRadius="25" WidthRequest="250"
+                Clicked="btnScan_Clicked"/>
+            <Label x:Name="txtBarcode"  FontSize="Large"
+               Text=""/>
+        </StackLayout>
+        <StackLayout BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="End">
+            <admob:AdMobView AdUnitId="ca-app-pub-4794882327575086/1959164689"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

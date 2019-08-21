@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QRCodeApp.AboutPage"
+             xmlns:admob="clr-namespace:Xam.FormsPlugin.Abstractions;assembly=AdMobView.FormsPlugin.Abstractions"
+             BackgroundImage="Background.png"
+             Title="About QR Code Scanner"
+             Icon="icon.png">
+    <ContentPage.Content>
+        
+        <StackLayout>
+            
+            <StackLayout Margin="20" HorizontalOptions="Center" VerticalOptions="StartAndExpand">
+                <Label Text="QRCode Scanner" FontSize="30" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Black"/>
+                <Label Text="Version 1.0" FontSize="Large" HorizontalOptions="Center"/>
+                <Image Source="icon.png" WidthRequest="200" HeightRequest="200"/>
+
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="developer by MiniTitan" FontSize="Medium" HorizontalOptions="Center"/>
+                    <Label Text="Email : minititancreation@gmail.com" FontSize="Medium" HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+            
+            <StackLayout BackgroundColor="White" HorizontalOptions="Center" VerticalOptions="End">
+                <admob:AdMobView AdUnitId="ca-app-pub-4794882327575086/9439550525"/>
+            </StackLayout>     
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
