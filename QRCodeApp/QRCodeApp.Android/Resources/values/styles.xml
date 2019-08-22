@@ -2,10 +2,14 @@
 <resources>
 
   <style name="Theme.Splash" parent="android:Theme">
-    <item name="android:windowBackground">@drawable/Splash</item>
-    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowBackground">
+      @drawable/Splash
+    </item>
+    <item name="android:windowNoTitle">
+      true
+    </item>
   </style>
-  
+
   <style name="MainTheme" parent="MainTheme.Base">
   </style>
   <!-- Base theme applied no matter what API -->
